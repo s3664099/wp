@@ -1,1 +1,11 @@
-/* Insert your styles here */
+
+    h1 {color:brown;
+        text-align: center;
+        }
+    .search {
+        display: inline;
+        text-align: center
+        }
+    .left {float: left}
+    .right {float: right}
+

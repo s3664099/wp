@@ -42,17 +42,9 @@
     </nav>
 
     <main>
-      <article id='About'>
-          <h2>Picture Inserted Here</h2>
-          <h3>Who We Are</h3>
-          <p>Dusty Books is your go to place for any and all secondhand literature. We are a site that specialises in collecting, cataloguing, and offering up for sale the vast number of secondhand books that exist in attics, basements, and musty shops all over Australia. While we don't claim to have everything, it is our goal to be able to help you find that rare, out of print, or just obscure book, that you have been searching for.</p>
-          <p>It is also our goal to help you find an option to be able to clear out all of those books that having been gathering dust in the boxes at the back of your garages, the ones that you have read once and have no intention of ever reading again. Or those university text-books that simply become obsolete after you have finished the course and passed the exam.</p>
-          <h3>Our History</h3>
-          <p>Professor Hubert J Farnsworth (no relation) just could not find that particular book, no matter how hard he search, until he was in Armidale in Perth for some completely unknown reason, when he found it hidden away, at the back of a local secondhand bookshop. It was then that he came upon his idea - a way of connecting customers with books, and books with customers.</p>
-          <p>He realised that many people only ever read their books once, and the second-hand bookshops simply were not able take everybody's unwanted literary works. Thus he created Dusty Books, a way for bookshops to reach out to customers who might never come anywhere their stores, and for the avid readers to be able to find that long lost book that just never seems to be anywhere, at least anywhere they happn to do.</p>
-          <h3>Contact</h3>
-          <div>Snail Mail: Q1357 Queen Victoria Building, Sydney NSW</div>
-          <div>Email: info@dustybooks.com.au</div>
+      <article id='Website Under Construction'>
+    <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
+        <img src='../../media/website-under-construction.png' alt='Website Under Construction' />
       </article>
     </main>
 

@@ -1,11 +1,60 @@
 
-    h1 {color:brown;
-        text-align: center;
-        }
-    .search {
+/*header*/
+
+.logo_align {
+    text-align: center
+}
+
+/*media image for heading and font*/
+
+h1 {color:brown;
         display: inline;
-        text-align: center
+        font-size: 8vw;
         }
-    .left {float: left}
-    .right {float: right}
+
+.logo img{
+    margin: 0;
+    max-height: 100%;
+    width: auto;
+}
+
+/*nav bar*/
+
+@media only screen and (max-width: 600px) {
+    .full_list {display: none}
+    .short_list {display: inline-block}
+}
+
+@media only screen and (min-width: 600px) {
+    .short_list {display: none}
+}
+
+
+
+nav ul .full_list {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+    .full {color: #000;
+    padding: 8px 25px;
+    text-decoration: none;
+}
+
+    .short {color: #000;
+    padding: 8px 3px;
+    text-decoration: none;
+}
+
+
+nav li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+
+
 

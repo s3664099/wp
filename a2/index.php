@@ -17,28 +17,32 @@
   <body>
 
     <header>
-        <div>
-            <h1>Dusty Books</h1> 
+        <div class="logo_align">
+            <img class="logo" src="../../media/Books_Left.png">
+            <!--https://pixabay.com/en/books-read-literature-old-learn-2006000/-->
+            <h1>Dusty Books</h1>
+            <!-- http://www.stickpng.com/img/objects/book/collection-of-old-books -->
+            <img class="logo" src="../../media/Books_Right.png"> 
         </div>
     </header>
 
     <nav>
-        <div>
-            <span class="left">HM LG</span>
-            <span class="center">
-            <form class="search" action="" method="post" target="_blank">
-                <input name="search" style="text" placeholder="Search">
-                <select name="search_type">
-                    <option value="Title">Title</option>
-                    <option value="Author">Author</option>
-                    <option value="ISBN">ISBN</option>
-                    <option value="Genre">Genre</option>
-                </select>
-                <input type="submit" name="search" value="S">
-            </form>
-            </span>    
-            <span class="right">SC</span>
-        </div>
+        <ul class="full_list">
+            <li><a class="full" href="index.php">Home</a></li>
+            <li><a class="full" href="products.php">Browse</a></li>
+            <li><a class="full" href="index.php">Search</a></li>
+            <li><a class="full" href="login.php">Log-in</a></li>
+            <li><a class="full" href="cart.php">Shopping Cart</a></li>
+            <li><a class="full" href="mailto:dasarkies@gmail.com">Contact Us</a></li>
+        </ul>
+        <ul class="short_list">
+            <li><a class="short" href="index.php">H</a></li>
+            <li><a class="short" href="products.php">B</a></li>
+            <li><a class="short" href="index.php">S</a></li>
+            <li><a class="short" href="login.php">L</a></li>
+            <li><a class="short" href="cart.php">S</a></li>
+            <li><a class="short" href="mailto:dasarkies@gmail.com">E</a></li>
+        </ul>
     </nav>
 
     <main>
@@ -50,9 +54,6 @@
           <h3>Our History</h3>
           <p>Professor Hubert J Farnsworth (no relation) just could not find that particular book, no matter how hard he search, until he was in Armidale in Perth for some completely unknown reason, when he found it hidden away, at the back of a local secondhand bookshop. It was then that he came upon his idea - a way of connecting customers with books, and books with customers.</p>
           <p>He realised that many people only ever read their books once, and the second-hand bookshops simply were not able take everybody's unwanted literary works. Thus he created Dusty Books, a way for bookshops to reach out to customers who might never come anywhere their stores, and for the avid readers to be able to find that long lost book that just never seems to be anywhere, at least anywhere they happn to do.</p>
-          <h3>Contact</h3>
-          <div>Snail Mail: Q1357 Queen Victoria Building, Sydney NSW</div>
-          <div>Email: info@dustybooks.com.au</div>
       </article>
     </main>
 

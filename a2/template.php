@@ -17,28 +17,32 @@
   <body>
 
     <header>
-        <div>
-            <h1>Dusty Books</h1> 
+        <div class="logo_align">
+            <img class="logo" src="../../media/Books_Left.png">
+            <!--https://pixabay.com/en/books-read-literature-old-learn-2006000/-->
+            <h1>Dusty Books</h1>
+            <!-- http://www.stickpng.com/img/objects/book/collection-of-old-books -->
+            <img class="logo" src="../../media/Books_Right.png"> 
         </div>
     </header>
 
     <nav>
-        <div>
-            <span class="left">HM LG</span>
-            <span class="center">
-            <form class="search" action="" method="post" target="_blank">
-                <input name="search" style="text" placeholder="Search">
-                <select name="search_type">
-                    <option value="Title">Title</option>
-                    <option value="Author">Author</option>
-                    <option value="ISBN">ISBN</option>
-                    <option value="Genre">Genre</option>
-                </select>
-                <input type="submit" name="search" value="S">
-            </form>
-            </span>    
-            <span class="right">SC</span>
-        </div>
+        <ul class="full_list">
+            <li><a class="full" href="index.php">Home</a></li>
+            <li><a class="full" href="books.php">Browse</a></li>
+            <li><a class="full" href="index.php">Search</a></li>
+            <li><a class="full" href="login.php">Log-in</a></li>
+            <li><a class="full" href="cart.php">Shopping Cart</a></li>
+            <li><a class="full" href="mailto:dasarkies@gmail.com">Contact Us</a></li>
+        </ul>
+        <ul class="short_list">
+            <li><a class="short" href="index.php">H</a></li>
+            <li><a class="short" href="books.php">B</a></li>
+            <li><a class="short" href="index.php">S</a></li>
+            <li><a class="short" href="login.php">L</a></li>
+            <li><a class="short" href="cart.php">S</a></li>
+            <li><a class="short" href="mailto:dasarkies@gmail.com">E</a></li>
+        </ul>
     </nav>
 
     <main>

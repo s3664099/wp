@@ -6,8 +6,8 @@ body
   margin:0px;
   background: rgba(40,40,40,0.1);
   border: 5px solid hsl(314,0%,40%);
-  box-sizing: border-box;
 }
+
 html {
   min-height:100vh;
 }
@@ -33,7 +33,7 @@ div
 }
 
 /* Give each semantic body element a different color */
-header
+/* header
 {
   background-color: hsl(0,100%,97%);
   border: 5px solid hsl(0,100%,60%);
@@ -47,18 +47,20 @@ main
 {
   background-color: hsl(120,100%,97%);
   border: 5px solid hsl(120,100%,40%);
-}
+}*/
+
 footer
 {
   background-color: hsl(300,100%,97%);
   border: 5px solid hsl(300,100%,60%);
 }
 
-article
+/*article
 {
   background-color: hsl(270,100%,97%);
   border: 5px solid hsl(270,100%,70%);
-}
+}*/
+
 aside
 {
   background-color: hsl(180,100%,97%);
@@ -95,10 +97,10 @@ marquee,
   border:20px solid black;
 }
 frame,
-table {
+/*table {
   padding:10px;
   background: repeating-linear-gradient(315deg, #999 0px, #999 20px, #9FF 20px, #9FF 40px) !important;
-}
+}*/
 
 center::after,
 font::after,

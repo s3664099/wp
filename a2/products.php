@@ -17,18 +17,16 @@
   <body>
     <header>
         <div class="logo_align">
-            <img class="logo" src="../../media/Books_Left.png">
             <!--https://pixabay.com/en/books-read-literature-old-learn-2006000/-->
-            <h1>Dusty Books</h1>
+            <img src="../../media/DustyBooksTitle.jpg" alt="Dusty Books">
             <!-- http://www.stickpng.com/img/objects/book/collection-of-old-books -->
-            <img class="logo" src="../../media/Books_Right.png"> 
         </div>
     </header>
 
     <nav>
         <ul class="full_list">
             <li><a class="full" href="index.php">Home</a></li>
-            <li><a class="full" href="products.php">Browse</a></li>
+            <li><a class="full" id="current" href="products.php">Browse</a></li>
             <li><a class="full" href="index.php">Search</a></li>
             <li><a class="full" href="login.php">Log-in</a></li>
             <li><a class="full" href="cart.php">Shopping Cart</a></li>
@@ -36,7 +34,7 @@
         </ul>
         <ul class="short_list">
             <li><a class="short" href="index.php">H</a></li>
-            <li><a class="short" href="products.php">B</a></li>
+            <li><a class="short" id="current" href="products.php">B</a></li>
             <li><a class="short" href="index.php">S</a></li>
             <li><a class="short" href="login.php">L</a></li>
             <li><a class="short" href="cart.php">S</a></li>
@@ -46,181 +44,305 @@
 
     <main>
       <article id='About'>
+          <a href="product.php">
+          <div class="product_box">
           <table>
-              <tr colspan="2">
-                  Thumbnail Picture
+              <tr colspan="2" class="pic_box">
+                  <div class="thumb_pix">
+                  <img  src="../../media/Paradise%20Lost%20Thumb.jpg">
+                  </div>
               </tr>
               <tr>
-                  <td>
-                      title
-                  </td>
+                  <th>
+                      Title
+                  </th>
                   <td>
                       Paradise Lost
                   </td>
               </tr>
               <tr>
-                  <td>
+                  <th>
                       Author
-                  </td>
+                  </th>
                   <td>
                       John Milton
                   </td>
               </tr>
               <tr>
-                  <td>
+                  <th>
                       Genre
-                  </td>
+                  </th>
                   <td>
                       Poetry
                   </td>
               </tr>
           </table>
-          
+          </div>
+          </a>
+          <div class="product_box">
           <table>
-              <tr colspan="2">
-                  Thumbnail Picture
+              <tr colspan="2" class="pic_box">
+                  <div class="thumb_pix">
+                  <img src="../../media/Mr%20Happy%20Thumb.jpg">
+                  </div>
               </tr>
               <tr>
-                  <td>
-                      title
-                  </td>
+                  <th>
+                      Title
+                  </th>
                   <td>
                       Mr Happy
                   </td>
               </tr>
               <tr>
-                  <td>
+                  <th>
                       Author
-                  </td>
+                  </th>
                   <td>
                       Roger Hargraves
                   </td>
               </tr>
               <tr>
-                  <td>
+                  <th>
                       Genre
-                  </td>
+                  </th>
                   <td>
                       Childrens
                   </td>
               </tr>
           </table>
+          </div>
+          <div class="product_box">
           <table>
-              <tr colspan="2">
-                  Thumbnail Picture
+              <tr colspan="2" class="pic_box">
+                  <div class="thumb_pix">
+                  <img src="../../media/Caeser%20Thumb.jpg">
+                  </div>
               </tr>
               <tr>
-                  <td>
-                      title
-                  </td>
+                  <th>
+                      Title
+                  </th>
                   <td>
                       Civil War
                   </td>
               </tr>
               <tr>
-                  <td>
+                  <th>
                       Author
-                  </td>
+                  </th>
                   <td>
                       Julius Caeser
                   </td>
               </tr>
               <tr>
-                  <td>
+                  <th>
                       Genre
-                  </td>
+                  </th>
                   <td>
                       History
                   </td>
               </tr>
           </table>
+          </div>
+          <div class="product_box">
           <table>
-              <tr colspan="2">
-                  Thumbnail Picture
+              <tr colspan="2" class="pic_box">
+                  <div class="thumb_pix">
+                  <img src="../../media/I-Robot%20Thumb.jpg">
+                  </div>
               </tr>
               <tr>
-                  <td>
-                      title
-                  </td>
+                  <th>
+                      Title
+                  </th>
                   <td>
                       I, Robot
                   </td>
               </tr>
               <tr>
-                  <td>
+                  <th>
                       Author
-                  </td>
+                  </th>
                   <td>
                       Isaac Asimov
                   </td>
               </tr>
               <tr>
-                  <td>
+                  <th>
                       Genre
-                  </td>
+                  </th>
                   <td>
                       Sci-Fi
                   </td>
               </tr>
           </table>
+          </div>
+          <div class="product_box">
           <table>
-              <tr colspan="2">
-                  Thumbnail Picture
+              <tr colspan="2" class="pic_box">
+                  <div class="thumb_pix">
+                  <img src="../../media/Left-Hand%20Thumb.jpg">
+                  </div>
               </tr>
               <tr>
-                  <td>
-                      title
-                  </td>
+                  <th>
+                      Title
+                  </th>
                   <td>
                       The Left Hand of Darkness
                   </td>
               </tr>
               <tr>
-                  <td>
+                  <th>
                       Author
-                  </td>
+                  </th>
                   <td>
                       Ursula Le Guin
                   </td>
               </tr>
               <tr>
-                  <td>
+                  <th>
                       Genre
-                  </td>
+                  </th>
                   <td>
                       Sci-Fi
                   </td>
               </tr>
           </table>
+          </div>
+          <div class="product_box">
           <table>
-              <tr colspan="2">
-                  Thumbnail Picture
+              <tr colspan="2" class="pic_box">
+                  <div class="thumb_pix">
+                  <img src="../../media/Byron%20Thumb.jpg">
+                  </div>
               </tr>
               <tr>
+                  <th>
+                      Title
+                  </th>
                   <td>
-                      title
-                  </td>
-                  <td>
-                      Collected Works of Lord Byron
+                      Poetical Works of Lord Byron
                   </td>
               </tr>
               <tr>
-                  <td>
+                  <th>
                       Author
-                  </td>
+                  </th>
                   <td>
                       Lord Byron
                   </td>
               </tr>
               <tr>
-                  <td>
+                  <th>
                       Genre
-                  </td>
+                  </th>
                   <td>
                       Poetry
                   </td>
               </tr>
           </table>
+          </div>
+          <div class="product_box">
+          <table>
+              <tr colspan="2" class="pic_box">
+                  <div class="thumb_pix">
+                  <img src="../../media/Cat's%20Cradle%20Thumb.jpg">
+                  </div>
+              </tr>
+              <tr>
+                  <th>
+                      Title
+                  </th>
+                  <td>
+                      Cat's Cradle
+                  </td>
+              </tr>
+              <tr>
+                  <th>
+                      Author
+                  </th>
+                  <td>
+                      Kurt Vonnegut
+                  </td>
+              </tr>
+              <tr>
+                  <th>
+                      Genre
+                  </th>
+                  <td>
+                      Science-Fiction
+                  </td>
+              </tr>
+          </table>
+          </div>
+          <div class="product_box">
+          <table>
+              <tr colspan="2" class="pic_box">
+                  <div class="thumb_pix">
+                  <img src="../../media/Folly%20Thumb.jpg">
+                  </div>
+              </tr>
+              <tr>
+                  <th>
+                      Title
+                  </th>
+                  <td>
+                      Praise of Folly
+                  </td>
+              </tr>
+              <tr>
+                  <th>
+                      Author
+                  </th>
+                  <td>
+                      Erasmus
+                  </td>
+              </tr>
+              <tr>
+                  <th>
+                      Genre
+                  </th>
+                  <td>
+                      Satire
+                  </td>
+              </tr>
+          </table>
+          </div>
+          <div class="product_box">
+          <table>
+              <tr colspan="2" class="pic_box">
+                  <div class="thumb_pix">
+                  <img src="../../media/Catch-22%20Thumb.jpg">
+                  </div>
+              </tr>
+              <tr>
+                  <th>
+                      Title
+                  </th>
+                  <td>
+                      Catch 22
+                  </td>
+              </tr>
+              <tr>
+                  <th>
+                      Author
+                  </th>
+                  <td>
+                      Joseph Heller
+                  </td>
+              </tr>
+              <tr>
+                  <th>
+                      Genre
+                  </th>
+                  <td>
+                      Comedy
+                  </td>
+              </tr>
+          </table>
+          </div>
       </article>
     </main>
 

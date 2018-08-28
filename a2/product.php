@@ -46,11 +46,11 @@
     </nav>
 
     <main>
-      <article id='Website Under Construction'>
+      <article>
           <table>
               <tr>
                   <td colspan="2">
-                      Book Cover
+                      <img src="../../media/Paradise%20Lost.jpg">
                   </td>
               </tr>
               <tr>
@@ -115,15 +115,21 @@
                   <td>$40.00</td>
               </tr>
           </table>
+          
           <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php" method="post">
-              <input type="hidden" name="id" value="a unique product or service code">
+              <input type="hidden" name="id" value="0-14-042363-X">
               <select name="option">
-                  <option value="a secondary option for the product">Soft-Cover</option>
-                  <option value="a secondary option for the product">Hard-Cover</option>
-                  <option value="a secondary option for the product">Audio-book</option>
-                  <option value="a secondary option for the product">Graphic-Novel</option>
+                  <option value="soft" onClick="soft()">Soft-Cover</option>
+                  <option value="hard" onClick="hard()">Hard-Cover</option>
+                  <option value="audio" onClick="audio()">Audio-book</option>
+                  <option value="graphic" onClick="graphic()">Graphic-Novel</option>
               </select>
-              <input type="number" name="qty" min="0" value="0">
+              <button type="button" onClick="add()">+</button>
+              <span id="num">0</span>
+              <button type="button" onClick="subtract()">-</button>
+              <input type="hidden" name="qty" id="qty" value="0">
+              Total Price: $
+              <span id="priceTotal">0</span>.00
               <input type="submit" value="Add to Cart">
           </form>
       </article>
@@ -136,6 +142,6 @@
       <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
       <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
     </footer>
-
+      <script src="script.js" type="text/javascript"></script>
   </body>
 </html>

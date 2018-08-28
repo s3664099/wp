@@ -32,7 +32,7 @@
             <li><a class="full" href="products.php">Browse</a></li>
             <li><a class="full" href="index.php">Search</a></li>
             <li><a class="full" href="login.php">Log-in</a></li>
-            <li><a class="full" href="cart.php">Shopping Cart</a></li>
+            <li><a class="full" href="cart.php">Cart</a></li>
             <li><a class="full" href="mailto:dasarkies@gmail.com">Contact Us</a></li>
         </ul>
         <ul class="short_list">
@@ -46,7 +46,7 @@
     </nav>
 
     <main>
-      <article id='About'>
+      <article id='ib'>
           <h2>Picture Inserted Here</h2>
           <h3>Who We Are</h3>
           <p>Dusty Books is your go to place for any and all secondhand literature. We are a site that specialises in collecting, cataloguing, and offering up for sale the vast number of secondhand books that exist in attics, basements, and musty shops all over Australia. While we don't claim to have everything, it is our goal to be able to help you find that rare, out of print, or just obscure book, that you have been searching for.</p>

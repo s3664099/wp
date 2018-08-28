@@ -1,60 +1,171 @@
 
 /*header*/
 
+header {background-color: rgb(255,253,170);
+        border: 5px groove rgb(77,22,0)
+}
 .logo_align {
-    text-align: center
+    text-align: center;
+    border: none;
 }
 
-/*media image for heading and font*/
-
-h1 {color:brown;
-        display: inline;
-        font-size: 8vw;
-        }
-
-.logo img{
-    margin: 0;
-    max-height: 100%;
-    width: auto;
-}
+img {max-width: 100%;
+    border: none;
+    padding: 0px;
+    margin: 0px}
 
 /*nav bar*/
 
+nav
+{
+  background-color: hsl(240,100%,97%);
+  border-top: 5px solid hsl(240,100%,60%);
+  border-left: 5px solid hsl(240,100%,60%);
+  border-Right: 5px solid hsl(240,100%,60%);
+  border-bottom: 0px;
+}
+
 @media only screen and (max-width: 600px) {
     .full_list {display: none}
-    .short_list {display: inline-block}
+    .short_list {display: inline-flex}
 }
 
 @media only screen and (min-width: 600px) {
     .short_list {display: none}
+    .full_list {display: inline-flex}
 }
 
-
-
-nav ul .full_list {
+nav ul {
     text-align: center;
     margin: 0;
     padding: 0;
     background-color: #f1f1f1;
+    width:100%;
+}
+
+nav li {
+    list-style-type: none;
+    width: 15%;
 }
 
     .full {color: #000;
-    padding: 8px 25px;
+    padding: 8px 20px;
     text-decoration: none;
 }
 
     .short {color: #000;
-    padding: 8px 3px;
+    padding: 8px 5px;
     text-decoration: none;
 }
 
+#current {
+    background-color: #555;
+    color: white;
+}
 
 nav li a:hover {
     background-color: #555;
     color: white;
 }
 
+/*main*/
+main
+{
+  background-color: hsl(240,100%,97%);
+  border-top: 0px;
+  border-right: 5px solid hsl(240,100%,60%);
+  border-left: 5px solid hsl(240,100%,60%);
+  border-bottom: 5px solid hsl(240,100%,60%);
+}
 
+.About{
+    background: repeating-linear-gradient(315deg, #666 0px, #666 20px, #CCC 20px, #CCC 40px);
+    display: inline-block;
+    width: 45%;
+    height: 400px;
+    min-width: 400px;
+    max-width: 600px;
+    box-sizing: border-box;
+}
 
+article
+{
+  background-color: hsl(270,100%,97%);
+  border: 5px groove rgb(70,32,0);
+  background-image: url("../../../media/paper-1914901_1920.jpg");
+  background-size: cover;
+}
 
+/*product boxs*/
+
+.product_box {
+    width: 60%;
+    padding-top: 20px;
+    border: 5px solid;
+    margin-top: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: antiquewhite;
+}
+
+@media only screen and (min-width: 600px){
+    .product_box {
+        width: 250px;
+        margin: 60px;
+        text-align: center;
+        display: inline-block;
+        width: calc(100*/3)}
+}
+
+th {
+    text-align: left;
+    padding-right: 10px;
+}
+
+th, td {
+    padding-bottom: 10px;
+}
+
+tr {
+    background-color: antiquewhite;
+}
+
+.pic_box {
+    margin-bottom: 20px;
+}
+
+.thumb_pix {
+    text-align: center;
+    border: none;
+
+}
+
+.pic_box {
+    border-bottom: solid
+}
+
+main a {
+    text-decoration: none;
+    color: black;
+}
+
+main img {
+    width: 100;
+    border: none;
+    border-color: burlywood;
+    box-shadow: 5px 10px 8px;
+}
+
+/*Paradise Lost Picture: By John Milton - Houghton Library, Public Domain, https://commons.wikimedia.org/w/index.php?curid=34944104
+Mr Happy Picture: Mr Happy by Roger Hargreaves (c) 1971 Thurman Publishing
+Dusty Books Font: https://fonts.google.com/specimen/MedievalSharp
+Catch 22 Picture: (c) 1981 Corgi Books
+Praise of Folly Picture: (c) 2013 nathanburtondesign.com
+Left Hand of Darkness Picture: (c) 2017 McPhersons Printing Group
+I-Robot Cover: (c) 1993 HarpersCollins Publishers
+Cat's Cradle Cover: (c) 2006 The Dial Press
+Poetical Works of Lord Byron Cover: Ward, Lock & Co, London
+The Civil War Cover: (c) 1967 Penguin Publishing
+Background Image: https://pixabay.com/en/paper-scrapbook-texture-decorative-1914901/
+*/
 

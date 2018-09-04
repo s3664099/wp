@@ -1,28 +1,30 @@
 
+body {margin: 2.5%}
+
 /*header*/
 
 header {background-color: rgb(255,253,170);
-        border: 5px groove rgb(77,22,0)
-}
-.logo_align {
-    text-align: center;
-    border: none;
+        border: 5px groove rgb(77,22,0);
+        text-align: center;
 }
 
-img {max-width: 100%;
-    border: none;
+header img {max-width: 100%;
+    border: none; 
     padding: 0px;
-    margin: 0px}
+    margin: 0px;
+    }
 
 /*nav bar*/
 
 nav
 {
   background-color: hsl(240,100%,97%);
-  border-top: 5px solid hsl(240,100%,60%);
-  border-left: 5px solid hsl(240,100%,60%);
-  border-Right: 5px solid hsl(240,100%,60%);
-  border-bottom: 0px;
+  border: 5px solid hsl(240,100%,60%);
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: sticky;
+  top:0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -36,11 +38,34 @@ nav
 }
 
 nav ul {
-    text-align: center;
     margin: 0;
     padding: 0;
     background-color: #f1f1f1;
     width:100%;
+}
+
+/*source: https://stackoverflow.com/questions/8809909/change-cursor-to-finger-pointer*/
+
+#search_button, #login_button {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.unhidden {
+    display: inline-block;
+    visibility: visible;
+}
+
+#search_box {
+    text-align: center;
+}
+
+.search_options {
+    margin: 5px;
 }
 
 nav li {
@@ -49,18 +74,13 @@ nav li {
 }
 
     .full {color: #000;
-    padding: 8px 20px;
+    padding: 8px 10px;
     text-decoration: none;
 }
 
     .short {color: #000;
     padding: 8px 5px;
     text-decoration: none;
-}
-
-#current {
-    background-color: #555;
-    color: white;
 }
 
 nav li a:hover {
@@ -71,11 +91,10 @@ nav li a:hover {
 /*main*/
 main
 {
-  background-color: hsl(240,100%,97%);
-  border-top: 0px;
-  border-right: 5px solid hsl(240,100%,60%);
-  border-left: 5px solid hsl(240,100%,60%);
-  border-bottom: 5px solid hsl(240,100%,60%);
+  background-color: hsl(270,100%,97%);
+  border: 5px groove rgb(70,32,0);
+  background-image: url("../../../media/paper-1914901_1920.jpg");
+  background-size: cover;
 }
 
 .About{
@@ -88,14 +107,6 @@ main
     box-sizing: border-box;
 }
 
-article
-{
-  background-color: hsl(270,100%,97%);
-  border: 5px groove rgb(70,32,0);
-  background-image: url("../../../media/paper-1914901_1920.jpg");
-  background-size: cover;
-}
-
 /*product boxs*/
 
 .product_box {
@@ -106,20 +117,39 @@ article
     margin-left: 20%;
     margin-right: 20%;
     background-color: antiquewhite;
+    text-align: center;
 }
 
 @media only screen and (min-width: 600px){
     .product_box {
-        width: 250px;
-        margin: 60px;
-        text-align: center;
+        width: 20%;
+        margin: 5%;
         display: inline-block;
-        width: calc(100*/3)}
+        width: calc(100%*/3)}
+}
+
+#product_main {
+    width: 60%;
+    padding 20px;
+    border: 5px solid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #product_main, main form {
+        width:80%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 
 th {
     text-align: left;
-    padding-right: 10px;
 }
 
 th, td {
@@ -132,16 +162,8 @@ tr {
 
 .pic_box {
     margin-bottom: 20px;
-}
-
-.thumb_pix {
+    border-bottom: solid;
     text-align: center;
-    border: none;
-
-}
-
-.pic_box {
-    border-bottom: solid
 }
 
 main a {
@@ -150,11 +172,85 @@ main a {
 }
 
 main img {
-    width: 100;
+
     border: none;
     border-color: burlywood;
     box-shadow: 5px 10px 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
+
+.details {
+    text-align: left;
+}
+
+article form {
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    text-align: center;
+    border: solid 5px;
+    background-color: antiquewhite;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+article
+{
+    padding: 10px;
+}
+
+article p {
+    text-align: justify;
+}
+
+.home_pic {
+    text-align: center;
+    display: block;
+}
+
+.home_pic img {
+    max-width: 100%;
+}
+
+div {
+    border: none;
+}
+
+.order_query {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display:inline-block;
+}
+ 
+.order_amount {
+    border: solid 1px;
+    background-color: white;
+    margin: 10px;
+    padding: 0px;
+    display: inline-block;
+}
+
+footer {
+    font-size: small;
+    margin: 30px;
+}
+
+
+/*popup login*/
+
+#logon {
+    margin-left: 40%;
+    margin-right: 40%;
+    width: 20%;
+    position: absolute;
+    border: solid black 2px;
+    background-color: white;
+    visibility: hidden;
+}
+    
 
 /*Paradise Lost Picture: By John Milton - Houghton Library, Public Domain, https://commons.wikimedia.org/w/index.php?curid=34944104
 Mr Happy Picture: Mr Happy by Roger Hargreaves (c) 1971 Thurman Publishing

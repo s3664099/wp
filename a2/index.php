@@ -33,13 +33,13 @@
       </ul>
         
       <!-- http://font-awesome.com -->
-      <ul class="short_list">
-        <li><a class="short" href="index.php"><i class="fas fa-home"></i></a></li>
-        <li><a class="short" href="products.php"><i class="fas fa-book-reader"></i></a></li>
-        <li><a class="short" id="search_button_small"><i class="fas fa-search"></i></a></li>
-        <li><a class="short" id="login_button_small"><i class="fas fa-user"></i></a></li>
-        <li><a class="short" href="cart.php"><i class="fas fa-shopping-cart"></i></a></li>
-        <li><a class="short" href="mailto:dasarkies@gmail.com"><i class="far fa-envelope"></i></a></li>
+       <ul class="short_list">
+        <li class="short"><a class="short" href="index.php"><i class="fas fa-home"></i></a></li>
+        <li class="short"><a class="short" href="products.php"><i class="fas fa-book-reader"></i></a></li>
+        <li class="short"><a class="short" id="search_button_small"><i class="fas fa-search"></i></a></li>
+        <li class="short"><a class="short" id="login_button_small"><i class="fas fa-user"></i></a></li>
+        <li class="short"><a class="short" href="cart.php"><i class="fas fa-shopping-cart"></i></a></li>
+        <li class="short"><a class="short" href="mailto:dasarkies@gmail.com"><i class="far fa-envelope"></i></a></li>
       </ul>
     
       <form id="search_bar" class="hidden">
@@ -49,15 +49,19 @@
           <option value="title">title</option>
           <option value="genre">genre</option>
           <option value="ISBN">ISBN</option>
+          <option value="type">type</option>
+          <option value="antique">antique</option>
+          <option value="auction">auction</option>
+          <option value="first_edition">1st Edition</option>
         </select>
         <input class="search_options" type="button" value="search">
       </form>
 
       <div>
       <form id="login_bar" class="hidden" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php" method="post">
-          Name <input type="text" name="username">
-          Password <input type="text" name="password">
-          <input type="submit" name="login" value="login">
+          <span>Name <input type="text" name="username"></span>
+          <span>Password <input type="text" name="password"></span>
+          <span><input type="submit" name="login" value="login"></span>
       </form> 
       </div> 
     </nav>
@@ -113,7 +117,6 @@
       </script> David Alfred Sarkies s3664099.</div>
       <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
     </footer>
-    <script src="script.js" type="text/javascript"></script>
-
+    <script src="nav.js" type="text/javascript"></script>
   </body>
 </html>

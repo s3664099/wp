@@ -2,7 +2,6 @@
 body {margin: 2.5%}
 
 /*header*/
-
 header {background-color: rgb(255,253,170);
         border: 5px groove rgb(77,22,0);
         text-align: center;
@@ -15,7 +14,6 @@ header img {max-width: 100%;
     }
 
 /*nav bar*/
-
 nav
 {
   background-color: hsl(240,100%,97%);
@@ -62,6 +60,13 @@ nav ul {
 
 #search_box {
     text-align: center;
+}
+
+nav span {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    padding-left: 10px;
 }
 
 .search_options {
@@ -142,14 +147,21 @@ main
 
 @media only screen and (max-width: 600px) {
     #product_main, main form {
-        width:80%;
+        width: 80%;
         margin-left: 5%;
         margin-right: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    th {
+        padding-left: 0px;
     }
 }
 
 th {
     text-align: left;
+    padding-left: 5px;
 }
 
 th, td {
@@ -158,6 +170,10 @@ th, td {
 
 tr {
     background-color: antiquewhite;
+}
+
+#description {
+    text-align: justify;
 }
 
 .pic_box {
@@ -172,7 +188,7 @@ main a {
 }
 
 main img {
-
+    max-width: 100%;
     border: none;
     border-color: burlywood;
     box-shadow: 5px 10px 8px;
@@ -184,7 +200,7 @@ main img {
     text-align: left;
 }
 
-article form {
+main form {
     margin-left: 20%;
     margin-right: 20%;
     width: 60%;
@@ -233,6 +249,11 @@ div {
     display: inline-block;
 }
 
+#qty {
+    width: 20px;
+    padding: 0px;   
+}
+
 footer {
     font-size: small;
     margin: 30px;
@@ -241,15 +262,6 @@ footer {
 
 /*popup login*/
 
-#logon {
-    margin-left: 40%;
-    margin-right: 40%;
-    width: 20%;
-    position: absolute;
-    border: solid black 2px;
-    background-color: white;
-    visibility: hidden;
-}
     
 
 /*Paradise Lost Picture: By John Milton - Houghton Library, Public Domain, https://commons.wikimedia.org/w/index.php?curid=34944104

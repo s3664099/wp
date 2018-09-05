@@ -3,41 +3,87 @@
 
 var quantity = 0;
 var price = 10;
+var quant = 0;
 const basePrice=10;
-
-document.getElementById("search_button").onclick = reveal_search;
-document.getElementById("search_button_small").onclick = reveal_search;
-
-document.getElementById("login_button").onclick = reveal_login;
-document.getElementById("login_button_small").onclick = reveal_login;
+var error = false;
 
 document.getElementById("increase").onclick = add;
 
 function add() {
-    var quant = document.getElementById('num');
-    quantity ++;
-    quant.textContent=quantity;
-    
-    //source: https://stackoverflow.com/questions/14966905/passing-values-from-javascript-to-form
-    document.getElementById("qty").value = quantity;
-    displayPrice();
+    getAmount();
+
+    if(error == false)
+    {
+        quantity ++;
+        quant.textContent=quantity;
+        updateAmount();
+    } else {
+        quant.textContent = 0;
+        error = false;
+    }
 }
 
 document.getElementById("decrease").onclick = subtract;
 
 function subtract() {
-    var quant = document.getElementById('num');
-    quantity --;
-    if (quantity<0)
+    getAmount();
+
+    if(error == false)
+    {
+        quantity --;
+        checkAmount();
+        quant.textContent=quantity;
+        updateAmount();
+
+    } else {
+        error = false;
+    }
+
+}
+
+document.getElementById("qty").onblur = amount;
+
+function amount() {
+    getAmount();
+
+    if(error == false)
+    {
+        quantity = quant;
+        checkAmount();
+        quant.textContent=quantity;
+        updateAmount();
+    } else {
+        error = false;
+    }
+}
+
+function getAmount() {
+    quant = parseInt(document.getElementById('qty').value);
+
+    if(isNaN(quant))
+    {
+        document.getElementById('error').textContent = "Please enter a number";
+        error = true;
+        quant.textContent = 0;
+    }
+}
+
+function checkAmount() {
+        if (quantity<0)
         {
             quantity =0;
         }
+}
+
+function updateAmount() {
     
-    quant.textContent=quantity;
     //source: https://stackoverflow.com/questions/14966905/passing-values-from-javascript-to-form
     document.getElementById("qty").value = quantity;
     displayPrice();
+    document.getElementById('error').textContent = "";
 }
+
+
 
 document.getElementById("soft").onclick = soft;
 document.getElementById("hard").onclick = hard;
@@ -68,23 +114,5 @@ function graphic() {
 function displayPrice(){
     var total = document.getElementById('priceTotal');
     total.textContent = price*quantity;
-}
-
-//source: https://www.lifewire.com/show-and-hide-text-3467102
-
-function reveal_search() {
- var item=document.getElementById("search_bar")
- if (item) {
-     item.className =
-         (item.className=='hidden')?'unhidden':'hidden';
- }
-}
-
-function reveal_login() {
- var item=document.getElementById("login_bar")
- if (item) {
-     item.className =
-         (item.className=='hidden')?'unhidden':'hidden';
- }
 }
 

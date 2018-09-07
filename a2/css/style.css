@@ -28,11 +28,15 @@ nav
 @media only screen and (max-width: 600px) {
     .full_list {display: none}
     .short_list {display: inline-flex}
+    .narrow {display: table-row;}
+    .wide {display: none}
 }
 
 @media only screen and (min-width: 600px) {
     .short_list {display: none}
     .full_list {display: inline-flex}
+    .narrow {display: none;}
+    .wide {display: table-row;}
 }
 
 nav ul {
@@ -44,7 +48,7 @@ nav ul {
 
 /*source: https://stackoverflow.com/questions/8809909/change-cursor-to-finger-pointer*/
 
-#search_button, #login_button {
+#search_button{
     cursor: pointer;
 }
 
@@ -102,8 +106,31 @@ main
   background-size: cover;
 }
 
+@media only screen and (min-width: 600px) {
+    main p {
+        font-size: 25px;
+    }
+
+    main h3 {
+        font-size: 30px;
+    }
+
+    main h2 {
+        font-size: 50px;
+        color: rgb(6,2,28);
+    }
+
+    article img {
+        width: 750px;
+    }
+
+    article, aside {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
 .About{
-    background: repeating-linear-gradient(315deg, #666 0px, #666 20px, #CCC 20px, #CCC 40px);
     display: inline-block;
     width: 45%;
     height: 400px;
@@ -135,7 +162,6 @@ main
 
 #product_main {
     width: 60%;
-    padding 20px;
     border: 5px solid;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -143,6 +169,25 @@ main
     margin-right: 20%;
     background-color: antiquewhite;
     text-align: center;
+}
+
+article, aside {
+    padding: 10px;
+}
+
+article p, aside p {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 2px 2px #F9D62D;
+}
+
+h3 {
+    font-family: 'Acme', sans-serif;
 }
 
 @media only screen and (max-width: 600px) {
@@ -160,20 +205,38 @@ main
 }
 
 th {
-    text-align: left;
     padding-left: 5px;
+    font-family: 'Acme', sans-serif;
 }
 
 th, td {
     padding-bottom: 10px;
+    text-align: left;
+}
+
+#type_head {
+    text-align: center;
 }
 
 tr {
     background-color: antiquewhite;
 }
 
+td {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.details {
+    border-right: 1px solid;
+}
+
+.type {
+    padding-left: 10px;
+}
+
 #description {
     text-align: justify;
+    padding: 10px;
 }
 
 .pic_box {
@@ -182,7 +245,7 @@ tr {
     text-align: center;
 }
 
-main a {
+.product_link {
     text-decoration: none;
     color: black;
 }
@@ -196,10 +259,6 @@ main img {
     margin-bottom: 20px;
 }
 
-.details {
-    text-align: left;
-}
-
 main form {
     margin-left: 20%;
     margin-right: 20%;
@@ -211,15 +270,6 @@ main form {
     margin-bottom: 20px;
 }
 
-article
-{
-    padding: 10px;
-}
-
-article p {
-    text-align: justify;
-}
-
 .home_pic {
     text-align: center;
     display: block;
@@ -227,10 +277,6 @@ article p {
 
 .home_pic img {
     max-width: 100%;
-}
-
-div {
-    border: none;
 }
 
 .order_query {
@@ -252,6 +298,37 @@ div {
 #qty {
     width: 20px;
     padding: 0px;   
+}
+
+#error {
+    visibility: hidden;
+    border: solid 5px black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+}
+
+#login {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+}
+
+.login_title {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+#create_account {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 footer {

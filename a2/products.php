@@ -10,8 +10,12 @@
     
     <!-- https//www.w3schools.com/icons/fontawesome_icons_intro.asp -->
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
+    <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <script src='../wireframe.js'></script>
+    <script>document.getElementById("wireframecss").disabled=true;</script>
   </head>
 
   <body>
@@ -26,7 +30,7 @@
         <li class="full"><a class="full" href="index.php">Home <i class="fas fa-home"></i></a></li>
         <li class="full"><a class="full" href="products.php">Browse <i class="fas fa-book-reader"></i></a></li>
         <li class="full"><a class="full" id="search_button">Search <i class="fas fa-search"></i></a></li>
-        <li class="full"><a class="full" id="login_button">Log-in <i class="fas fa-user"></i></a></li>
+        <li class="full"><a class="full" href="login.php">Log-in <i class="fas fa-user"></i></a></li>
         <li class="full"><a class="full" href="">Shopping Cart <i class="fas fa-shopping-cart"></i></a></li>
         <li class="full"><a class="full" href="mailto:s3664099@student.rmit.edu.au">Contact Us <i class="far fa-envelope"></i></a></li>
       </ul>
@@ -55,18 +59,10 @@
         </select>
         <input class="search_options" type="button" value="search">
       </form>
-
-      <div>
-      <form id="login_bar" class="hidden" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php" method="post">
-          Name <input type="text" name="username">
-          Password <input type="text" name="password">
-          <input type="submit" name="login" value="login">
-      </form> 
-      </div> 
     </nav>
 
     <main>
-      <a href="product.php">
+      <a class="product_link" href="product.php">
         <div class="product_box">
           <table>
             <tr colspan="2" class="pic_box">
@@ -250,6 +246,7 @@
         document.write(new Date().getFullYear());
       </script> David Alfred Sarkies s3664099.</div>
       <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
+      <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
     </footer>
     <script src="nav.js" type="text/javascript"></script>
   </body>

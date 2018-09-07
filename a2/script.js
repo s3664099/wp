@@ -6,6 +6,7 @@ var price = 10;
 var quant = 0;
 const basePrice=10;
 var error = false;
+var message = "";
 
 document.getElementById("increase").onclick = add;
 
@@ -50,10 +51,10 @@ function amount() {
     {
         quantity = quant;
         checkAmount();
-        quant.textContent=quantity;
         updateAmount();
     } else {
         error = false;
+
     }
 }
 
@@ -62,9 +63,11 @@ function getAmount() {
 
     if(isNaN(quant))
     {
-        document.getElementById('error').textContent = "Please enter a number";
+        message = "Please enter a number";
+        showError();
+
         error = true;
-        quant.textContent = 0;
+        document.getElementById('qty').value = 0;
     }
 }
 
@@ -80,15 +83,31 @@ function updateAmount() {
     //source: https://stackoverflow.com/questions/14966905/passing-values-from-javascript-to-form
     document.getElementById("qty").value = quantity;
     displayPrice();
-    document.getElementById('error').textContent = "";
+    hideError();
 }
 
+document.getElementById("option").onchange = changeValue;
 
+function changeValue() {
+    var yourSelect = document.getElementById("option");
+    var value = yourSelect.options[yourSelect.selectedIndex].value;
 
-document.getElementById("soft").onclick = soft;
-document.getElementById("hard").onclick = hard;
-document.getElementById("audio").onclick = audio;
-document.getElementById("graphic").onclick = graphic;
+    switch (value) {
+        case "soft":
+            soft();
+            break;
+        case "hard":
+            hard();
+            break;
+        case "audio":
+            audio();
+            break;
+        case "graphic":
+            graphic();
+            break;
+    }
+
+}
 
 function soft(){
     price = basePrice;
@@ -116,3 +135,28 @@ function displayPrice(){
     total.textContent = price*quantity;
 }
 
+function checkQuantity() {
+
+    hideError();
+
+    if (quantity == 0)
+    {
+        message = "You cannot order 0 products";
+        showError();
+        return false;
+    }
+
+    return true;
+}
+
+function showError() {
+    var prob = document.getElementById('error');
+    prob.textContent = message;
+    prob.style.visibility = "visible";
+}
+
+function hideError() {
+    var prob = document.getElementById('error');
+    prob.textContent = "";
+    prob.style.visibility = "hidden";
+}

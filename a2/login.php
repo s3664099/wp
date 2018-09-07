@@ -30,7 +30,7 @@
         <li class="full"><a class="full" href="index.php">Home <i class="fas fa-home"></i></a></li>
         <li class="full"><a class="full" href="products.php">Browse <i class="fas fa-book-reader"></i></a></li>
         <li class="full"><a class="full" id="search_button">Search <i class="fas fa-search"></i></a></li>
-        <li class="full"><a class="full" id="login_button">Log-in <i class="fas fa-user"></i></a></li>
+        <li class="full"><a class="full" href="login.php">Log-in <i class="fas fa-user"></i></a></li>
         <li class="full"><a class="full" href="">Shopping Cart <i class="fas fa-shopping-cart"></i></a></li>
         <li class="full"><a class="full" href="mailto:s3664099@student.rmit.edu.au">Contact Us <i class="far fa-envelope"></i></a></li>
       </ul>
@@ -40,7 +40,7 @@
         <li class="short"><a class="short" href="index.php"><i class="fas fa-home"></i></a></li>
         <li class="short"><a class="short" href="products.php"><i class="fas fa-book-reader"></i></a></li>
         <li class="short"><a class="short" id="search_button_small"><i class="fas fa-search"></i></a></li>
-        <li class="short"><a class="short" id="login_button_small"><i class="fas fa-user"></i></a></li>
+        <li class="short"><a class="short" href="login.php"><i class="fas fa-user"></i></a></li>
         <li class="short"><a class="short" href="cart.php"><i class="fas fa-shopping-cart"></i></a></li>
         <li class="short"><a class="short" href="mailto:dasarkies@gmail.com"><i class="far fa-envelope"></i></a></li>
       </ul>
@@ -62,15 +62,17 @@
     </nav>
 
     <main>
-      <form id="login" action="https://titan.csit.rmit.edu.au/~e54061/wp/login.php" method="post">
+      <form id="login" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php" method="post" onsubmit="return checkInput()">
         <div class="login_title">Name</div>
-        <div><input type="text" name="username"></div>
+        <div><input id="username" type="text" name="username"></div>
         <div class="login_title">Password</div>
-        <input type="password" name="password"></div>
-        <div class="login_title"><input type="submit" name="login" value="login"></div>
+        <input id="password" type="password" name="password"></div>
+        <div class="login_title"><input type="submit" value="login"></div>
         <div id="create_account">
           <div>We understand that you may not have an account with us as yet</div>
           <div><a href="">You can create an account here</a></div>
+        </div>
+        <div id="error">
         </div>
       </form> 
     </main>
@@ -83,5 +85,6 @@
       <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
     </footer>
     <script src="nav.js" type="text/javascript"></script>
+    <script src="login.js" type="text/javascript"></script>
   </body>
 </html>

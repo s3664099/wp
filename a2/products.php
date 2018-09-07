@@ -40,7 +40,7 @@
         <li class="short"><a class="short" href="index.php"><i class="fas fa-home"></i></a></li>
         <li class="short"><a class="short" href="products.php"><i class="fas fa-book-reader"></i></a></li>
         <li class="short"><a class="short" id="search_button_small"><i class="fas fa-search"></i></a></li>
-        <li class="short"><a class="short" id="login_button_small"><i class="fas fa-user"></i></a></li>
+        <li class="short"><a class="short" href="login.php"><i class="fas fa-user"></i></a></li>
         <li class="short"><a class="short" href="cart.php"><i class="fas fa-shopping-cart"></i></a></li>
         <li class="short"><a class="short" href="mailto:dasarkies@gmail.com"><i class="far fa-envelope"></i></a></li>
       </ul>

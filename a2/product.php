@@ -1,10 +1,4 @@
-<!-- Add photos to the title page
-    Look at changing the color of the nav bar
-    Fix up the style for the product select and quantity buttons
-    value turns red when enter letter
-    pretty up login page - add book stacks to either side for wide screen
-    Tidy up comments
-    
+<!--
     Have the search bar stay when changing pages
     If have time - have objects for other books -->
 
@@ -52,7 +46,7 @@
         <li class="short"><a class="short" href="index.php"><i class="fas fa-home"></i></a></li>
         <li class="short"><a class="short" href="products.php"><i class="fas fa-book-reader"></i></a></li>
         <li class="short"><a class="short" id="search_button_small"><i class="fas fa-search"></i></a></li>
-        <li class="short"><a class="short" id="login_button_small"><i class="fas fa-user"></i></a></li>
+        <li class="short"><a class="short" href="login.php"><i class="fas fa-user"></i></a></li>
         <li class="short"><a class="short" href="cart.php"><i class="fas fa-shopping-cart"></i></a></li>
         <li class="short"><a class="short" href="mailto:dasarkies@gmail.com"><i class="far fa-envelope"></i></a></li>
       </ul>
@@ -190,12 +184,12 @@
                 <option value="graphic">Graphic-Novel</option>
               </select>
             </span>
-            <span class="order_amount">
+            <span id="order_amount">
               <button type="button" id="decrease">-</button>
               <input id="qty" type="text" name="qty" value="0">
               <button type="button" id="increase">+</button>
             </span>
-            <span class="order_query">    
+            <span id="order_query">    
               Total Price: $
               <span id="priceTotal">0</span>.00
             </span>

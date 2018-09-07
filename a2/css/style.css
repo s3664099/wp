@@ -1,7 +1,7 @@
 
 body {margin: 2.5%}
 
-/*header*/
+/*this section styles the header bar*/
 header {background-color: rgb(255,253,170);
         border: 5px groove rgb(77,22,0);
         text-align: center;
@@ -13,11 +13,11 @@ header img {max-width: 100%;
     margin: 0px;
     }
 
-/*nav bar*/
+/*this section styles the nav bar*/
 nav
 {
-  background-color: hsl(240,100%,97%);
-  border: 5px solid hsl(240,100%,60%);
+  background-color: #FF9A88;
+  border: 5px solid rgb(104,18,0);
   text-align: center;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -25,6 +25,7 @@ nav
   top:0;
 }
 
+/*Small screens will only show icons, large sceens words and icons*/
 @media only screen and (max-width: 600px) {
     .full_list {display: none}
     .short_list {display: inline-flex}
@@ -39,14 +40,38 @@ nav
     .wide {display: table-row;}
 }
 
+/*The links are styled here*/
+/*The source of the css for the links was from
+: https://stackoverflow.com/questions/8809909/change-cursor-to-finger-pointer*/
+
 nav ul {
     margin: 0;
     padding: 0;
-    background-color: #f1f1f1;
     width:100%;
 }
 
-/*source: https://stackoverflow.com/questions/8809909/change-cursor-to-finger-pointer*/
+nav li {
+    list-style-type: none;
+    width: 15%;
+}
+
+    .full {color: #000;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+
+    .short {color: #000;
+    padding: 8px 5px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #240600;
+    color: white;
+}
+
+/*This section reveals and closes the search box. It also turns changes the image of the 
+mouse pointer when it is over the search option*/
 
 #search_button{
     cursor: pointer;
@@ -77,27 +102,10 @@ nav span {
     margin: 5px;
 }
 
-nav li {
-    list-style-type: none;
-    width: 15%;
-}
+/*This section styles the main section of the page
+Source for the Background Image: 
+https://pixabay.com/en/paper-scrapbook-texture-decorative-1914901/*/
 
-    .full {color: #000;
-    padding: 8px 10px;
-    text-decoration: none;
-}
-
-    .short {color: #000;
-    padding: 8px 5px;
-    text-decoration: none;
-}
-
-nav li a:hover {
-    background-color: #555;
-    color: white;
-}
-
-/*main*/
 main
 {
   background-color: hsl(270,100%,97%);
@@ -106,6 +114,7 @@ main
   background-size: cover;
 }
 
+/*Font sizes will change depending on the size of the screen*/
 @media only screen and (min-width: 600px) {
     main p {
         font-size: 25px;
@@ -130,6 +139,31 @@ main
     }
 }
 
+/*This section is for index.php*/
+
+article, aside {
+    padding: 10px;
+}
+
+aside h3 {
+    display: inline;
+}
+
+article p, aside p {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 2px 2px #F9D62D;
+}
+
+h3 {
+    font-family: 'Acme', sans-serif;
+}
+
 .About{
     display: inline-block;
     width: 45%;
@@ -139,7 +173,36 @@ main
     box-sizing: border-box;
 }
 
-/*product boxs*/
+.home_pic {
+    max-width: 100%;
+    text-align: center;
+    display: block;
+
+}
+
+.home_pic p {
+    font-size: small;
+    text-align: center;
+}
+
+.home_pic img {
+    max-width: 100%;
+    box-shadow: 5px 10px 8px;
+}
+
+.payment img {
+    display: inline;
+    box-shadow: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#payment {
+    padding-right: 40px;
+}
+
+/*This section styles the boxes containing the products on
+product.php and products.php*/
 
 .product_box {
     width: 60%;
@@ -169,25 +232,6 @@ main
     margin-right: 20%;
     background-color: antiquewhite;
     text-align: center;
-}
-
-article, aside {
-    padding: 10px;
-}
-
-article p, aside p {
-    text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-h2 {
-    text-align: center;
-    font-family: 'Pacifico', cursive;
-    text-shadow: 2px 2px #F9D62D;
-}
-
-h3 {
-    font-family: 'Acme', sans-serif;
 }
 
 @media only screen and (max-width: 600px) {
@@ -259,6 +303,7 @@ main img {
     margin-bottom: 20px;
 }
 
+/*This section styles the product order form on product.php*/
 main form {
     margin-left: 20%;
     margin-right: 20%;
@@ -270,15 +315,6 @@ main form {
     margin-bottom: 20px;
 }
 
-.home_pic {
-    text-align: center;
-    display: block;
-}
-
-.home_pic img {
-    max-width: 100%;
-}
-
 .order_query {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -287,7 +323,7 @@ main form {
     display:inline-block;
 }
  
-.order_amount {
+#order_amount {
     border: solid 1px;
     background-color: white;
     margin: 10px;
@@ -295,25 +331,23 @@ main form {
     display: inline-block;
 }
 
+/*The buttons for increasing and decreasing the order amount is styled here*/
+#decrease, #increase {
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+#decrease:hover, #increase:hover {
+    background-color: black;
+    color: white;
+}
+
 #qty {
     width: 20px;
     padding: 0px;   
 }
 
-#error {
-    visibility: hidden;
-    border: solid 5px black;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-right: 20%;
-    margin-left: 20%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: white;
-    background-color: red;
-}
-
+/*This section styles the login screen*/
 #login {
     margin-left: 25%;
     margin-right: 25%;
@@ -336,8 +370,22 @@ footer {
     margin: 30px;
 }
 
+/*This section styles the error box which appears when an incorrect
+submission is made*/
 
-/*popup login*/
+#error {
+    visibility: hidden;
+    border: solid 5px black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+}
 
     
 
@@ -351,6 +399,6 @@ I-Robot Cover: (c) 1993 HarpersCollins Publishers
 Cat's Cradle Cover: (c) 2006 The Dial Press
 Poetical Works of Lord Byron Cover: Ward, Lock & Co, London
 The Civil War Cover: (c) 1967 Penguin Publishing
-Background Image: https://pixabay.com/en/paper-scrapbook-texture-decorative-1914901/
+
 */
 

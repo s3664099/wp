@@ -32,8 +32,8 @@
         <li class="full"><a class="full" href="products.php">Browse <i class="fas fa-book-reader"></i></a></li>
         <li class="full"><a class="full" id="search_button">Search <i class="fas fa-search"></i></a></li>
         <li class="full"><a class="full" href="login.php">Log-in <i class="fas fa-user"></i></a></li>
-        <li class="full"><a class="full" href="">Shopping Cart <i class="fas fa-shopping-cart"></i></a></li>
-        <li class="full"><a class="full" href="mailto:s3664099@student.rmit.edu.au">Contact Us <i class="far fa-envelope"></i></a></li>
+        <li class="full"><a class="full" href="">Cart <i class="fas fa-shopping-cart"></i></a></li>
+        <li class="full"><a class="full" href="mailto:s3664099@student.rmit.edu.au">Contact <i class="far fa-envelope"></i></a></li>
       </ul>
         
       <!-- http://font-awesome.com -->

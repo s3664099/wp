@@ -73,7 +73,7 @@
             <tr class="wide">
               <td colspan="4">
                 <div class="pic_box">
-                  <img src="../../media/Paradise%20Lost.jpg">
+                  <img src="../../media/Paradise_Lost.jpg">
                 </div>
               </td>
             </tr>

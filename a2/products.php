@@ -61,12 +61,13 @@
       </form>
     </nav>
 
+    <!-- /*Paradise Lost Picture: By John Milton - Houghton Library, Public Domain, https://commons.wikimedia.org/w/index.php?curid=34944104 -->
     <main>
       <a class="product_link" href="product.php">
         <div class="product_box">
           <table>
             <tr colspan="2" class="pic_box">
-              <img src="../../media/Paradise%20Lost%20Thumb.jpg">
+              <img src="../../media/Paradise_Lost_Thumb.jpg">
             </tr>
             <tr>
               <th>Title</th>
@@ -84,10 +85,11 @@
         </div>
       </a>
 
+      <!-- Mr Happy Picture: Mr Happy by Roger Hargreaves (c) 1971 Thurman Publishing -->
         <div class="product_box">
           <table>
             <tr colspan="2" class="pic_box">
-              <img src="../../media/Mr%20Happy%20Thumb.jpg">
+              <img src="../../media/Mr_Happy_Thumb.jpg">
             </tr>
             <tr>
               <th>Title</th>
@@ -104,11 +106,11 @@
           </table>
         </div>
 
-
+        <!--The Civil War Cover: (c) 1967 Penguin Publishing-->
         <div class="product_box">
           <table>
             <tr colspan="2" class="pic_box">
-              <img class="thumb_pix" src="../../media/Caeser%20Thumb.jpg">
+              <img class="thumb_pix" src="../../media/Caeser_Thumb.jpg">
             </tr>
             <tr>
               <th>Title</th>
@@ -124,10 +126,12 @@
             </tr>
           </table>
         </div>
+
+        <!-- I-Robot Cover: (c) 1993 HarpersCollins Publishers -->
         <div class="product_box">
           <table>
             <tr colspan="2" class="pic_box">
-              <img src="../../media/I-Robot%20Thumb.jpg">
+              <img src="../../media/I-Robot_Thumb.jpg">
             </tr>
             <tr>
               <th>Title</th>
@@ -143,10 +147,12 @@
             </tr>
           </table>
         </div>
+
+        <!-- Left Hand of Darkness Picture: (c) 2017 McPhersons Printing Group -->
         <div class="product_box">
           <table>
             <tr colspan="2" class="pic_box">
-              <img src="../../media/Left-Hand%20Thumb.jpg">
+              <img src="../../media/Left-Hand_Thumb.jpg">
             </tr>
             <tr>
               <th>Title</th>
@@ -162,10 +168,12 @@
             </tr>
           </table>
         </div>
+
+          <!--Poetical Works of Lord Byron Cover: Ward, Lock & Co, London -->        
         <div class="product_box">
           <table>
             <tr colspan="2" class="pic_box">
-              <img src="../../media/Byron%20Thumb.jpg">
+              <img src="../../media/Byron_Thumb.jpg">
             </tr>
             <tr>
               <th>Title</th>
@@ -181,10 +189,12 @@
             </tr>
           </table>
           </div>
+
+          <!-- Cat's Cradle Cover: (c) 2006 The Dial Press -->
           <div class="product_box">
           <table>
             <tr colspan="2" class="pic_box">
-              <img src="../../media/Cat's%20Cradle%20Thumb.jpg">
+              <img src="../../media/Cat's_Cradle_Thumb.jpg">
             </tr>
             <tr>
               <th>Title</th>
@@ -200,10 +210,12 @@
             </tr>
           </table>
           </div>
+
+        <!-- Praise of Folly Picture: (c) 2013 nathanburtondesign.com -->          
           <div class="product_box">
           <table>
             <tr colspan="2" class="pic_box">
-              <img src="../../media/Folly%20Thumb.jpg">
+              <img src="../../media/Folly_Thumb.jpg">
             </tr>
             <tr>
               <th>Title</th>
@@ -219,10 +231,12 @@
             </tr>
           </table>
           </div>
+
+        <!-- Catch 22 Picture: (c) 1981 Corgi Books -->
           <div class="product_box">
             <table>
               <tr colspan="2" class="pic_box">
-                <img src="../../media/Catch-22%20Thumb.jpg">
+                <img src="../../media/Catch-22_Thumb.jpg">
               </tr>
               <tr>
                 <th>Title</th>

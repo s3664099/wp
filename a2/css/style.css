@@ -7,6 +7,7 @@ header {background-color: rgb(255,253,170);
         text-align: center;
 }
 
+/*Dusty Books Font: https://fonts.google.com/specimen/MedievalSharp*/
 header img {max-width: 100%;
     border: none; 
     padding: 0px;
@@ -26,14 +27,14 @@ nav
 }
 
 /*Small screens will only show icons, large sceens words and icons*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
     .full_list {display: none}
     .short_list {display: inline-flex}
     .narrow {display: table-row;}
     .wide {display: none}
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 720px) {
     .short_list {display: none}
     .full_list {display: inline-flex}
     .narrow {display: none;}
@@ -386,19 +387,4 @@ submission is made*/
     color: white;
     background-color: red;
 }
-
-    
-
-/*Paradise Lost Picture: By John Milton - Houghton Library, Public Domain, https://commons.wikimedia.org/w/index.php?curid=34944104
-Mr Happy Picture: Mr Happy by Roger Hargreaves (c) 1971 Thurman Publishing
-Dusty Books Font: https://fonts.google.com/specimen/MedievalSharp
-Catch 22 Picture: (c) 1981 Corgi Books
-Praise of Folly Picture: (c) 2013 nathanburtondesign.com
-Left Hand of Darkness Picture: (c) 2017 McPhersons Printing Group
-I-Robot Cover: (c) 1993 HarpersCollins Publishers
-Cat's Cradle Cover: (c) 2006 The Dial Press
-Poetical Works of Lord Byron Cover: Ward, Lock & Co, London
-The Civil War Cover: (c) 1967 Penguin Publishing
-
-*/
 

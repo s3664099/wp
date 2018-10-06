@@ -77,12 +77,14 @@ END_OF_TEXT;
 	echo $output;
 
 	function bottomModule() {
+		error_reporting(E_ERROR | E_WARNING | E_PARSE);
 		$output = <<< "END_OF_TEXT"
 		    	<footer>
       				<div>&copy;<script>
 				        document.write(new Date().getFullYear());
 			        </script> David Alfred Sarkies s3664099.</div>
 			        <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
+			        <div><a href="products.txt">Spreadsheet link</a></div>
 			        <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
 			    </footer>
 			    <script src="nav.js" type="text/javascript"></script>

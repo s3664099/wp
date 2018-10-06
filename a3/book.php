@@ -29,7 +29,7 @@
 			$this->_description = $description;
 			$this->_options = $options;
 			$this->_readBy = $readBy;
-      $this->_id = "product.php?id=".$id;
+      $this->_id = "products.php?id=".$id;
 
       $this->_price1 = "$".$this->_options['soft'].".00";
       $this->_price2 = "$".$this->_options['hard'].".00";

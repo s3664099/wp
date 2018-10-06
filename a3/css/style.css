@@ -249,6 +249,10 @@ product.php and products.php*/
     }
 }
 
+table {
+    width: 100%;
+}
+
 th {
     padding-left: 5px;
     font-family: 'Acme', sans-serif;
@@ -386,5 +390,15 @@ submission is made*/
     font-weight: bold;
     color: white;
     background-color: red;
+}
+
+#cart {
+    margin: 5%;
+    width: 90%;
+    border-style: solid;
+}
+
+#cart td, th {
+
 }
 

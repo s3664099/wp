@@ -75,6 +75,7 @@
 				    </nav>
 END_OF_TEXT;
 	echo $output;
+}
 
 	function bottomModule() {
 		error_reporting(E_ERROR | E_WARNING | E_PARSE);
@@ -93,8 +94,30 @@ END_OF_TEXT;
 
 END_OF_TEXT;
 	echo $output;
+	preShow($_POST);
+	preShow($_SESSION);
+
+	printMyCode('SCRIPT_FILENAME');
 
 	}
+
+	function preShow($arr, $returnAsString=false){
+		$ret = "<pre>".print_r($arr,true)."</pre>";
+		if($returnAsString)
+		{
+			return $ret;
+		}else{
+			echo $ret;
+		}
+	}
+
+	function printMyCode($filename){
+		$lines = file($_SERVER[$filename]);
+		echo "<pre class='my_code'> <br>";
+		foreach ($lines as $lineno => $lineOfCode) {
+			printf("%3u: %1s <br>",$lineno, rtrim(htmlentities($lineOfCode)));
+		echo"</pre>";
+		}
 	}
 
 

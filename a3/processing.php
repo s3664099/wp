@@ -2,10 +2,10 @@
 	session_start();
 
 	unset($_SESSION['error']);
-	$name_regex="#^[a-zA-Z \-.']{1,100}#";
-	$address_regex="#^[0-9a-z \/\\\-]+#";
+	$name_regex="#^[a-zA-Z \-.']{1,100}$#";
+	$address_regex="#^[0-9a-z \/\\\-\.,']+#";
 	$mobile_regex="#^(\(04\)|04|\+614)( ?\d){8}$#";
-	$visa_regex="#^(3|4|5)( ?\d){15}$#";
+	$visa_regex="#^(3|4|5)( ?\d){11,18}$#";
 	$year_regex="#^(\d){4}$#";
 
 

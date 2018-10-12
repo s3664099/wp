@@ -392,6 +392,7 @@ submission is made*/
     background-color: red;
 }
 
+/*This CSS styles the shopping cart page*/
 #cart {
     margin: 5%;
     width: 90%;
@@ -402,7 +403,79 @@ submission is made*/
 
 }
 
+.cart_button {
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 10%;
+    border: solid 5px;
+    background-color: antiquewhite;
+}
+
+.cart_button form {
+    border: none;
+}
+
+.cart_button input {
+    border: solid 5px;
+}
+
+.remove_button form {
+    border: none;
+}
+
+.remove_button input {
+    border: solid 5px;
+}
+
+/*CSS script for the checkout pages*/
+
+.checkout {
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+.checkout img {
+    margin: 0px 5px;
+}
+
+.checkout span {
+    display: block;
+    text-align: center;
+}
+
+.checkout input {
+    text-align: left;
+}
+
+.checkout_button input {
+    border: solid 5px;
+    margin: 5%; 
+}
+
+.checkout_error {
+    border: solid 5px black;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20%;
+    margin-left: 20%;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+}
+
+@media only screen and (max-width: 720px) {
+    .checkout_error {
+        display: block;
+    }
+}
+
 .visa_pic {
     width: 10px;
 }
+
+
 

@@ -85,7 +85,10 @@ END_OF_TEXT;
 				        document.write(new Date().getFullYear());
 			        </script> David Alfred Sarkies s3664099.</div>
 			        <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
-			        <div><a href="products.txt">Spreadsheet link</a></div>
+			        <div>
+			        	<a href="products.txt">Product spreadsheet link</a>
+			        	<a href="orders.txt">Order spreadsheet link</a>
+			        </div>
 			        <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
 			    </footer>
 			    <script src="nav.js" type="text/javascript"></script>
@@ -94,13 +97,25 @@ END_OF_TEXT;
 
 END_OF_TEXT;
 	echo $output;
+
+	//Debug Module - displays contenst of the arrays
+	echo '$_GET contains:';
+	preShow($_GET);
+
+	echo '$_POST contains:';
 	preShow($_POST);
+
+	echo '$_SESSION contains:';
 	preShow($_SESSION);
 
+	//styleCurrentNavLink('background-color: rgba(255,255,255,0.6);'); 
+
+	echo 'Print my code';
 	printMyCode('SCRIPT_FILENAME');
 
 	}
 
+	//Function to return contents of the session, get, and post data
 	function preShow($arr, $returnAsString=false){
 		$ret = "<pre>".print_r($arr,true)."</pre>";
 		if($returnAsString)
@@ -111,6 +126,7 @@ END_OF_TEXT;
 		}
 	}
 
+	//Fuction to print the webpage code.
 	function printMyCode($filename){
 		$lines = file($_SERVER[$filename]);
 		echo "<pre class='my_code'> <br>";
@@ -119,6 +135,13 @@ END_OF_TEXT;
 		echo"</pre>";
 		}
 	}
+
+	function styleCurrentNavLink( $css ) { 
+		$here = $_SERVER['SCRIPT_NAME'];  
+		$bits = explode('/',$here);  
+		$filename = $bits[count($bits)-1];  
+		echo "<style>nav a[href$='$filename'] { $css }</style>"; 
+} 
 
 
 ?>

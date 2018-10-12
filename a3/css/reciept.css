@@ -1,0 +1,39 @@
+body {
+	border: solid 5px;
+}
+
+header {
+	text-align: center;
+}
+
+img {
+	padding: 10px;
+}
+
+h1 h2 {
+	text-align: center;
+	padding: 5px;
+}
+
+.details {
+	margin: 20px;
+	margin-left: 20%;
+}
+
+table {
+	border: solid 2px;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 5%;
+	width: 60%;
+}
+
+tr {
+	border: solid 1px;
+}
+
+td {
+	text-align: center;
+}
+
+

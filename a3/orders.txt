@@ -1,9 +1,2 @@
 Date	Name	Email	Mobile	Address	PID	OID	Quantity	Unit Price	Sub Total
-"David S"	"128 S Hwy Salisbury 3016"	0415888999	4444444444444444	05/10/2018
-0-85985=091-9	soft	2	10
-"Batman bin Supaman"	"12 J Rd Allenby 1120"	0400000000	4000000000000000	05/10/2018
-0-85985=091-9	soft	2	10
-"Batman bin Supaman"	"12 J Rd Allenby 1120"	0400000000	4000000000000000	05/10/2018
-X-XXXX-XXXX-X	hard	2	60
-"Batman bin Supaman"	"12 J Rd Allenby 1120"	0400000000	4000000000000000	05/10/2018
-0-385-33348-X	graphic	2	60
+
